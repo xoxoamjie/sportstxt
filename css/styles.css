@@ -1,0 +1,497 @@
+:root {
+  --primary-color: #e51a25;
+  --secondary-color: #f8f9fa;
+  --font-color: #333;
+  --dark-red: #c7161f;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--font-color);
+  margin-top: 80px;
+}
+
+/* Headings Styling */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h2,
+h5 {
+  color: #e63946;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* Custom Button */
+.btn-custom {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--dark-red);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 14px 0;
+}
+
+.navbar .navbar-brand img {
+  height: 70px;
+}
+
+.navbar .btn-custom {
+  padding: 6px 15px;
+}
+
+.navbar .btn-custom a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #e51a25 !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .btn-custom {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("../images/sport.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  padding: 200px 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 238, 238, 0.67);
+  z-index: 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Styling */
+.what-is-sportstxt {
+  background-color: var(--secondary-color);
+}
+
+.what-is-sportstxt h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.what-is-sportstxt .card {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.what-is-sportstxt .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .what-is-sportstxt .row {
+    justify-content: space-evenly;
+  }
+}
+
+.what-is-sportstxt .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.what-is-sportstxt .card-body {
+  padding: 20px;
+}
+
+.what-is-sportstxt .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e63946;
+}
+
+.what-is-sportstxt .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.what-is-sportstxt .row > .col-md-3 {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 992px) {
+  .what-is-sportstxt .row > .col-md-3 {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .what-is-sportstxt .row > .col-md-3 {
+    flex: 1 1 100%;
+  }
+}
+
+/* Platform of Firsts Section */
+.platform-of-firsts h5 {
+  color: #e63946;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.platform-of-firsts p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.platform-of-firsts .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.platform-of-firsts .col-md-3 {
+  flex: 1 1 calc(25% - 20px); /* Default for larger screens, 4 columns */
+}
+
+@media (max-width: 992px) {
+  .platform-of-firsts .col-md-3 {
+    flex: 1 1 calc(50% - 20px); /* For medium screens (tablets), 2 columns */
+  }
+}
+
+@media (max-width: 576px) {
+  .platform-of-firsts .col-md-3 {
+    flex: 1 1 100%; /* For small screens (phones), 1 column */
+  }
+}
+
+/* About Section */
+.about-section {
+  background-color: var(--secondary-color);
+}
+
+.about-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #e63946;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+}
+
+.features-section h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.features-section p {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.features-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-section li {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.features-section .card {
+  height: 100%;
+}
+
+.features-section .card i {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
+  display: block;
+  font-size: 2rem;
+}
+
+.features-section .card-body {
+  padding: 1.5rem;
+}
+
+.features-section .card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+  color: #e63946;
+}
+
+.features-section .card-body .card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.custom-img-size {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-img-size {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-img-size {
+    max-width: 40%;
+  }
+}
+
+/* About Us Section */
+.about-us-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us-section h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-us-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Key People Section */
+.key-people-section {
+  padding: 50px 0;
+  background-color: #e9ecef;
+}
+
+.key-people-section h3 {
+  font-weight: 600;
+  color: #e63946;
+}
+
+.key-people-section .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key-people-section .card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Contact Us Section */
+.contact-us-section.custom-padding {
+  padding-top: 50px !important;
+}
+
+.contact-us-section h2 {
+  text-align: left;
+  color: #e63946;
+  font-weight: 600;
+}
+
+.contact-us-section h3 {
+  font-size: 1rem;
+}
+
+.contact-us-section .form-label {
+  font-size: 0.9rem;
+}
+
+.contact-us-section .form-control {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+}
+
+.contact-us-section .contact-form {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  margin-top: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-section .map-section iframe {
+  height: 350px;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-nav {
+    font-size: 0.9rem;
+  }
+
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .features-section p {
+    font-size: 1rem;
+  }
+
+  .features-section .card-body {
+    padding: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.875rem;
+  }
+
+  .about-card {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar .navbar-brand img {
+    height: 70px;
+  }
+
+  .navbar-nav {
+    font-size: 1.1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 60px 30px;
+  }
+}
