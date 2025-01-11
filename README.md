@@ -30,7 +30,7 @@ The project is deployed on **GitHub Pages** for live viewing. You can access the
 
 You can view the mock-up design in **Figma** here:
 
-[**Figma Design**](https://www.figma.com/design/xRlagRToonHiRLkopnnxnw/web_design_exam?node-id=0-1&m=dev&t=8sDbfDONUuL1gBwn-1)
+[**Figma Design**]([https://www.figma.com/design/xRlagRToonHiRLkopnnxnw/web_design_exam?node-id=0-1&m=dev&t=8sDbfDONUuL1gBwn-1](https://www.figma.com/design/xRlagRToonHiRLkopnnxnw/web_design_exam?node-id=0-1&m=dev&t=O4JVFXJ8vJdTKVk5-1))
 
 ## Clone the Repository
 
